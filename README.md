@@ -18,11 +18,17 @@ Demo dataset is about the patient race, gender and age.
 
 Stage dataset is about the current CKD stage progress of each patient.
 
+## Results
+
+### AUC-ROC Curve
+
 <img src='data/auc-roc.png' content-align="center" width="80%">
 
 For this problem, I believe that using the Area Under Curve (AUC) as a metric will be an appropriate idea because it focuses on our sensitivity and specificity of our model. To elaborate, AUC measures how true positive rate (recall) and false positive rate trade-off. This reveals how good a model is at distinguishing between positive class and negative class. By analogy, the Higher the AUC, the better the model is at distinguishing whether the patients will progress with CKD or not in the future.
 
 Using an AUC Reciever Operating Characteristic or AUC-ROC curve, __we can visually compare the true positive and false positive rates at a range of different classification thresholds to identify our best model__.
+
+### Precision-Recall Curve
 
 <img src='data/precision-recall.png' content-align="center" width="80%">
 
@@ -36,7 +42,7 @@ Then we would like to know the positive predictive value (= precision) because p
 
 In this case, Logistic Regression and eXtreme Gradient Boosting classifier seems to have similar performance, but it looks like the eXtreme Gradient Boosting classifier slightly edges out. 
 
-Thus, eXtreme Gradient Boosting classifier is a better model for this problem.
+Thus, __eXtreme Gradient Boosting classifier is a better model for this problem.__
 
 ## Conclusion
 
